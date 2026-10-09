@@ -5,5 +5,9 @@ public class Movie : ScriptableObject
 {
     public string movieName;
     public int numDaysPlaying;
+
+    public int minNumScreens;
     public float profitSharing;
+
+    public float movieLength;
 }
