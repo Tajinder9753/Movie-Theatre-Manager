@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class RoomManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private Movie currentMoviePlaying;
 
-    // Update is called once per frame
-    void Update()
+    public void AddMovie(Movie movie)
     {
-        
+        currentMoviePlaying = movie;
+        Debug.Log("current movie playing: " + currentMoviePlaying.title);
     }
 }
